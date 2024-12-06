@@ -1,0 +1,13 @@
+#id-button{
+    padding: 5px 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: aquamarine;
+
+}
+.class-button{
+    padding: 5px 35px;
+    border-radius: 10px;
+    border-radius: 2px solid black;
+    background-color: white;
+}

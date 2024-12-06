@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+</head>
+<body>
+    <script>
+        let obj={                             
+            //below describe the JSON syntax which describe as the key value pair in both (" "):(" ")
+            "firstname":"vaibhav",
+            "age":"23"
+        }
+        console.log(obj.firstname);
+        console.log(obj.age);
+        console.log(typeof obj);
+
+        let newobj= JSON.stringify(obj);
+        console.log(typeof newobj);
+
+        let thirdobj = JSON.parse(newobj);
+        console.log(typeof thirdobj);
+
+        // let  {firstname,age} =obj;
+        // console.log(firstname);
+        // console.log(age);
+
+    </script>
+</body>
+</html>

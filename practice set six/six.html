@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice set six</title>
+</head>
+<body>
+    <script>
+        let Myntra={
+            item_name:'T-shirt',
+            componey:'POLO',
+            price:700,
+            'delevery-time':'same day'
+        };
+    // //    let copyProduct=Myntra; 
+    // //    console.log(Myntra);
+    // //    copyProduct.price=500;
+    // //    console.log(Myntra); 
+    // //    copyProduct.componey='PUMA';
+    // //    console.log(Myntra);
+    //    console.log(Myntra['delevery-time']);
+
+    //     let one={
+    //     message:'Good-jpb',
+    //     status:'complete',
+    //    };
+    //    let {message, status }=one;-> Here the  reductinn takes place.
+    //    console.log(message);
+    //    console.log(status);
+
+       function Identicalproduct(Myntra,Myntra2){
+        if (typeof Myntra !=='object' || typeof Myntra2 !=='object'){
+            console.warn('Parameter Passed was not an object');
+            return false;
+        }
+        if(Myntra==Myntra2){
+            return true;
+        }
+        if(Myntra.item_name === Myntra2.item_name &&
+        Myntra.componey === Myntra2.componey &&
+        Myntra.price === Myntra2.price
+        ){
+            return true;
+        }
+        else{
+            return false;
+        }
+       }
+
+       let Myntra2={
+            item_name:'shirt',
+            componey:'PUMA',
+            price:500,
+            'delevery-time':'same day'
+        };
+
+        console.log(Identicalproduct(Myntra, ''));
+        console.log(Identicalproduct(Myntra,Myntra));
+        console.log(Identicalproduct(Myntra,Myntra2));
+
+
+
+
+
+
+    
+    
+    </script>
+</body>
+</html>

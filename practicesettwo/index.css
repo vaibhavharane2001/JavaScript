@@ -1,0 +1,21 @@
+.bag{
+    padding: 5px 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: lightgreen;
+}
+.wish-list{
+    text-transform: uppercase;
+    padding: 5px 15px;
+    border-radius: 10px;
+
+
+}
+.sale-item{
+    padding: 5px 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: lightgreen;
+
+
+}
